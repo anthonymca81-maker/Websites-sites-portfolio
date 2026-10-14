@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0d12">
+  <meta name="description" content="Student portfolio showcasing web development skills and laboratory activities.">
+  <title>My Portfolio — Digital Experiences</title>
+    <link rel="stylesheet" href="Design.css">
+
+</head>
+<body id="top">
+  <audio id="bgMusic" src="C:\Users\nbais\Downloads\portfolio-webpage-main\portfolio-webpage-main\Sites\Shorekeeper OST 1 — Wuthering Waves.mp3" preload="auto" loop></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Pause background music" aria-pressed="true" title="Music on/off">
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label" id="musicLabel">Music</span>
+  </button>
+  <div class="shorekeeper-aura" aria-hidden="true"></div>
+  <canvas id="shorekeeperParticles" aria-hidden="true"></canvas>
+  <div class="shorekeeper-vignette" aria-hidden="true"></div>
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="My Portfolio home">
+        <span class="logo-mark"><span>✦</span></span>
+        <span>My Portfolio</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="menu-lines"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-video" id="heroVideo" src="C:\Users\nbais\Downloads\portfolio-webpage-main\portfolio-webpage-main\Sites\Shorekeeper piano scene [EN]_1080p.mp4" preload="none" loop playsinline aria-hidden="true" tabindex="-1"></video>
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span class="status-dot"></span> Student portfolio / 2026</div>
+          <h1>Crafting digital <span>experiences.</span></h1>
+          <p class="hero-description">I'm Castañas, a BS Computer Information and Technology student exploring web development, interactive design, and creative technology—one project at a time.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">Explore my work <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="#about">About me <span class="arrow" aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Portfolio overview">
+            <div class="meta-item"><strong>08</strong><span>Lab activities</span></div>
+            <div class="meta-item"><strong>08</strong><span>Core technologies</span></div>
+            <div class="meta-item"><strong>Always learning</strong><span>Current mindset</span></div>
+          </div>
+        </div>
+        <div class="hero-art" id="heroArt" role="button" tabindex="0" aria-pressed="false" aria-label="Play background video">
+          <img src="Images/shorekeeper2.jpg" alt="Featured Shorekeeper character artwork">
+          <span class="art-label">Creative technology · Web development</span>
+          <span class="video-hint" id="heroVideoHint" aria-live="polite">▶ Play video</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about">Scroll to explore</a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-side reveal">
+          <span class="eyebrow">01 / About</span>
+          <div class="index-number" aria-hidden="true">01</div>
+        </div>
+        <div class="about-copy reveal">
+          <h3>Curiosity is where every good idea begins.</h3>
+          <p>I am a Computer Information and Technology student who enjoys building websites with HTML, CSS, and JavaScript. I keep improving my web development skills by practicing, experimenting with layouts, and learning new tools every semester.</p>
+          <p>This portfolio brings together my laboratory activities and the progress I am making as I explore the world of web development.</p>
+          <div class="quote-line">Learning by building. Improving with every iteration.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">02 / Toolkit</span>
+          <h2>Tools I use to <span class="accent">create.</span></h2>
+          <p>A growing toolkit for building, styling, versioning, and publishing web projects.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">H5</span><div><h3>HTML</h3><p>Structure & semantics</p></div></article>
+          <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">#</span><div><h3>CSS</h3><p>Layout & visual design</p></div></article>
+          <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">JS</span><div><h3>JavaScript</h3><p>Interactive experiences</p></div></article>
+          <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">GIT</span><div><h3>Git</h3><p>Version control</p></div></article>
+          <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">GH</span><div><h3>GitHub</h3><p>Code hosting & collaboration</p></div></article>
+          <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">V</span><div><h3>Vercel</h3><p>Web deployment</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="projects-topline">
+          <div class="section-heading reveal">
+            <span class="eyebrow">03 / Selected work</span>
+            <h2>Laboratory <span class="accent">activities.</span></h2>
+            <p>A collection of class projects, experiments, and practical exercises from my web development journey.</p>
+          </div>
+          <span class="project-count">01 — 08 / ACTIVITIES</span>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab1.png" alt="Laboratory Activity 1 preview" loading="lazy"><span class="project-number">ACTIVITY / 01</span></div>
+            <div class="project-content"><span class="project-type">HTML · CSS · JavaScript</span><h3>Laboratory Activity 1</h3><p>A personal page with a journal, written in HTML, CSS, and JavaScript.</p><a class="project-link" href="Act1/personal_portfolio_journal_Act1.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab2.png" alt="Laboratory Activity 2 preview" loading="lazy"><span class="project-number">ACTIVITY / 02</span></div>
+            <div class="project-content"><span class="project-type">HTML · CSS</span><h3>Laboratory Activity 2</h3><p>A multi-page personal website built with HTML and CSS, featuring lists and a table.</p><a class="project-link" href="Act2/Myhomepage_Act2.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab3.png" alt="Laboratory Activity 3 preview" loading="lazy"><span class="project-number">ACTIVITY / 03</span></div>
+            <div class="project-content"><span class="project-type">Multi-page website</span><h3>Laboratory Activity 3</h3><p>A student website with a home page, grade table, and profile page.</p><a class="project-link" href="Act3/Castañashome_Act3.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab4.png" alt="Laboratory Activity 4 preview" loading="lazy"><span class="project-number">ACTIVITY / 04</span></div>
+            <div class="project-content"><span class="project-type">Student portal</span><h3>Laboratory Activity 4</h3><p>A student portal with a home page, profile, registration form, and grades table.</p><a class="project-link" href="Act4/index_Act4.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab5.png" alt="Laboratory Activity 5 preview" loading="lazy"><span class="project-number">ACTIVITY / 05</span></div>
+            <div class="project-content"><span class="project-type">Responsive design</span><h3>Laboratory Activity 5</h3><p>A responsive anime landing page with a hero banner, card grid, and watchlist, built with Flexbox.</p><a class="project-link" href="Act5/TopAnime.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab6.png" alt="Laboratory Activity 6 preview" loading="lazy"><span class="project-number">ACTIVITY / 06</span></div>
+            <div class="project-content"><span class="project-type">JavaScript · Web design</span><h3>Laboratory Finals — JavaScript</h3><p>An advanced web project showcasing modern CSS layout design and interactive features.</p><a class="project-link" href="login/login.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab7.png" alt="Laboratory Activity 7 preview" loading="lazy"><span class="project-number">ACTIVITY / 07</span></div>
+            <div class="project-content"><span class="project-type">Profile website with the Use of js Scripting</span><h3>Laboratory Finals — JavaScript</h3><p>An advanced web project showcasing modern CSS layout design and interactive features of a smaple Profile.</p><a class="project-link" href="C:\Users\nbais\Downloads\portfolio-webpage-main\portfolio-webpage-main\Sites\Castañas_Act1_Finals\Website.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image"><img src="Images/lab8.png" alt="Laboratory Activity 8 preview" loading="lazy"><span class="project-number">ACTIVITY / 08</span></div>
+            <div class="project-content"><span class="project-type">JS scripting Advance intermediate level</span><h3>Laboratory Finals — JavaScript</h3><p>An advanced web project showcasing modern CSS layout design and java script interactive features.</p><a class="project-link" href="C:\Users\nbais\Downloads\portfolio-webpage-main\portfolio-webpage-main\Sites\Castañas_Finals_Act2\index.html">View activity <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <span class="eyebrow">04 / Contact</span>
+            <h2>Let's stay<br><span class="accent">connected.</span></h2>
+            <p>Have a question about my activities or want to connect? You can reach me using the contact details below.</p>
+          </div>
+          <div class="contact-details">
+            <div class="contact-item"><span class="contact-symbol" aria-hidden="true">✉</span><div><small>Email</small><a href="mailto:studentinfo@pdm.com">studentinfo@pdm.com</a></div></div>
+            <div class="contact-item"><span class="contact-symbol" aria-hidden="true">↗</span><div><small>Phone</small><a href="tel:000123321">000-123-321</a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 PDM Student <span class="muted">/</span> Student Portfolio</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const header = document.getElementById('siteHeader');
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      const navAnchors = [...document.querySelectorAll('.nav-links a')];
+      const sections = [...document.querySelectorAll('main section[id]')];
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
+      // Shared between the music and hero-video features: while the video plays,
+      // the background music is paused so the two soundtracks never overlap.
+      let videoActive = false;
+      const musicHooks = { suspend: () => false, resume: () => {} };
+      const videoHooks = { stop: () => {} };
+
+      // Background music: tries to start as soon as the page opens. Browsers block
+      // sound until the visitor interacts, so if that happens it starts on the first
+      // click, tap, or key press instead. The button lets visitors pause/resume.
+      const music = document.getElementById('bgMusic');
+      const musicToggle = document.getElementById('musicToggle');
+      const musicLabel = document.getElementById('musicLabel');
+      if (music && musicToggle) {
+        let userPaused = false;
+        let wasPlayingBeforeHide = false;
+        music.volume = 0.5;
+
+        const setUi = playing => {
+          musicToggle.classList.toggle('is-playing', playing);
+          musicToggle.setAttribute('aria-pressed', String(playing));
+          musicToggle.setAttribute('aria-label', playing ? 'Pause background music' : 'Play background music');
+          if (musicLabel) musicLabel.textContent = playing ? 'Music' : 'Muted';
+        };
+        const tryPlay = () => {
+          if (videoActive) return Promise.resolve(false);
+          const attempt = music.play();
+          if (attempt && typeof attempt.then === 'function') {
+            return attempt.then(() => true).catch(() => false);
+          }
+          return Promise.resolve(!music.paused);
+        };
+
+        music.addEventListener('play', () => setUi(true));
+        music.addEventListener('pause', () => setUi(false));
+        music.addEventListener('error', () => {
+          musicToggle.hidden = true; // missing/unreadable file: hide the button instead of showing errors
+        });
+
+        const unlockEvents = ['pointerdown', 'click', 'keydown', 'touchend'];
+        const removeUnlock = () => unlockEvents.forEach(e => document.removeEventListener(e, unlockOnce, true));
+        function unlockOnce(event) {
+          if (videoActive) return;
+          if (userPaused || (musicToggle.contains(event.target))) { removeUnlock(); return; }
+          tryPlay().then(ok => { if (ok) removeUnlock(); });
+        }
+
+        const autoStart = () => {
+          if (userPaused) return;
+          tryPlay().then(ok => {
+            if (!ok) unlockEvents.forEach(e => document.addEventListener(e, unlockOnce, true));
+          });
+        };
+
+        musicToggle.addEventListener('click', () => {
+          if (videoActive) { userPaused = false; videoHooks.stop(true); return; }
+          if (music.paused) { userPaused = false; tryPlay(); }
+          else { userPaused = true; music.pause(); }
+        });
+
+        // Pause when the tab is hidden, resume when it comes back (unless the visitor muted it).
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) {
+            wasPlayingBeforeHide = !music.paused;
+            music.pause();
+          } else if (wasPlayingBeforeHide && !userPaused) {
+            tryPlay();
+          }
+        });
+
+        musicHooks.suspend = () => { const wasPlaying = !music.paused; music.pause(); return wasPlaying; };
+        musicHooks.resume = wasPlaying => { if (wasPlaying && !userPaused) tryPlay(); };
+
+        setUi(false);
+        if (document.readyState === 'complete') autoStart();
+        else window.addEventListener('load', autoStart, { once: true });
+        autoStart();
+      }
+
+      // Hero background video: click the artwork to play it behind the hero section,
+      // click again (or press Enter/Space on it) to stop and bring the artwork back.
+      const heroSection = document.getElementById('home');
+      const heroVideo = document.getElementById('heroVideo');
+      const heroArtButton = document.getElementById('heroArt');
+      const heroHint = document.getElementById('heroVideoHint');
+      if (heroSection && heroVideo && heroArtButton) {
+        let musicWasPlaying = false;
+        let resetTimer = 0;
+
+        const setVideoUi = (on, message) => {
+          heroSection.classList.toggle('video-on', on);
+          heroArtButton.setAttribute('aria-pressed', String(on));
+          heroArtButton.setAttribute('aria-label', on ? 'Stop background video' : 'Play background video');
+          if (heroHint) heroHint.textContent = message || (on ? '■ Stop video' : '▶ Play video');
+        };
+
+        const stopVideo = forceMusic => {
+          const wasActive = videoActive;
+          videoActive = false;
+          heroVideo.pause();
+          setVideoUi(false);
+          clearTimeout(resetTimer);
+          resetTimer = setTimeout(() => { if (!videoActive) { try { heroVideo.currentTime = 0; } catch (e) {} } }, 750);
+          if (wasActive) musicHooks.resume(forceMusic || musicWasPlaying);
+        };
+        videoHooks.stop = stopVideo;
+
+        const failVideo = () => {
+          if (!videoActive) return;
+          videoActive = false;
+          heroVideo.pause();
+          setVideoUi(false, 'Video unavailable');
+          musicHooks.resume(musicWasPlaying);
+          setTimeout(() => { if (!videoActive) setVideoUi(false); }, 3000);
+        };
+
+        const startVideo = () => {
+          clearTimeout(resetTimer);
+          videoActive = true;
+          musicWasPlaying = musicHooks.suspend();
+          if (heroHint) heroHint.textContent = 'Loading…';
+          const attempt = heroVideo.play();
+          if (attempt && typeof attempt.then === 'function') {
+            attempt.then(() => { if (videoActive) setVideoUi(true); }).catch(failVideo);
+          } else {
+            setVideoUi(true);
+          }
+        };
+
+        heroVideo.addEventListener('error', failVideo);
+        heroArtButton.addEventListener('click', () => { if (videoActive) stopVideo(); else startVideo(); });
+        heroArtButton.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); heroArtButton.click(); }
+        });
+      }
+
+      // Shorekeeper-inspired starlight motes across the whole viewport.
+      // The canvas is decorative and never blocks clicks or scrolling.
+      const particleCanvas = document.getElementById('shorekeeperParticles');
+      const particleContext = particleCanvas?.getContext('2d');
+      if (particleCanvas && particleContext && !reducedMotion) {
+        let particles = [];
+        let viewportWidth = window.innerWidth;
+        let viewportHeight = window.innerHeight;
+        let pixelRatio = Math.min(window.devicePixelRatio || 1, 1.6);
+        const particleCount = Math.min(85, Math.max(35, Math.floor(viewportWidth / 16)));
+        const resizeParticles = () => {
+          viewportWidth = window.innerWidth;
+          viewportHeight = window.innerHeight;
+          pixelRatio = Math.min(window.devicePixelRatio || 1, 1.6);
+          particleCanvas.width = Math.floor(viewportWidth * pixelRatio);
+          particleCanvas.height = Math.floor(viewportHeight * pixelRatio);
+          particleCanvas.style.width = `${viewportWidth}px`;
+          particleCanvas.style.height = `${viewportHeight}px`;
+          particleContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+          particles = Array.from({ length: Math.min(85, Math.max(35, Math.floor(viewportWidth / 16))) }, () => ({
+            x: Math.random() * viewportWidth,
+            y: Math.random() * viewportHeight,
+            radius: Math.random() * 1.65 + .35,
+            speed: Math.random() * .28 + .08,
+            drift: (Math.random() - .5) * .22,
+            phase: Math.random() * Math.PI * 2,
+            twinkle: Math.random() * .018 + .006
+          }));
+        };
+        let animationFrame = 0;
+        let lastFrame = 0;
+        const drawParticles = timestamp => {
+          if (document.hidden) { animationFrame = 0; return; }
+          if (timestamp - lastFrame < 32) { animationFrame = requestAnimationFrame(drawParticles); return; }
+          lastFrame = timestamp;
+          particleContext.clearRect(0, 0, viewportWidth, viewportHeight);
+          particles.forEach(p => {
+            p.y -= p.speed;
+            p.x += p.drift + Math.sin(timestamp * .00045 + p.phase) * .12;
+            if (p.y < -8) { p.y = viewportHeight + 8; p.x = Math.random() * viewportWidth; }
+            if (p.x < -8) p.x = viewportWidth + 8;
+            if (p.x > viewportWidth + 8) p.x = -8;
+            const alpha = .2 + (Math.sin(timestamp * p.twinkle + p.phase) + 1) * .28;
+            particleContext.beginPath();
+            particleContext.fillStyle = `rgba(165, 231, 255, ${alpha})`;
+            particleContext.shadowColor = 'rgba(103, 213, 255, .7)';
+            particleContext.shadowBlur = p.radius * 5;
+            particleContext.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            particleContext.fill();
+            if (p.radius > 1.45) {
+              particleContext.strokeStyle = `rgba(200, 242, 255, ${alpha * .5})`;
+              particleContext.lineWidth = .6;
+              particleContext.beginPath();
+              particleContext.moveTo(p.x - 3, p.y);
+              particleContext.lineTo(p.x + 3, p.y);
+              particleContext.moveTo(p.x, p.y - 3);
+              particleContext.lineTo(p.x, p.y + 3);
+              particleContext.stroke();
+            }
+          });
+          particleContext.shadowBlur = 0;
+          animationFrame = requestAnimationFrame(drawParticles);
+        };
+        resizeParticles();
+        const startParticleLoop = () => {
+          if (!document.hidden && !animationFrame) animationFrame = requestAnimationFrame(drawParticles);
+        };
+        const stopParticleLoop = () => {
+          if (animationFrame) cancelAnimationFrame(animationFrame);
+          animationFrame = 0;
+        };
+        window.addEventListener('resize', resizeParticles, { passive: true });
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) stopParticleLoop();
+          else startParticleLoop();
+        });
+        startParticleLoop();
+      }
+
+      // Give the header a subtle glass surface after the page begins to scroll.
+      const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 24);
+      updateHeader();
+      window.addEventListener('scroll', updateHeader, { passive: true });
+
+      // Accessible mobile navigation.
+      const closeMenu = () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
+        document.body.classList.remove('menu-open');
+      };
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+        navLinks.classList.toggle('open', !isOpen);
+      });
+      navAnchors.forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') closeMenu();
+      });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 680) closeMenu();
+      });
+
+      // Reveal elements as they enter the viewport.
+      const revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+        revealItems.forEach((item, index) => {
+          item.style.transitionDelay = `${Math.min((index % 3) * 75, 150)}ms`;
+          revealObserver.observe(item);
+        });
+      } else {
+        revealItems.forEach(item => item.classList.add('is-visible'));
+      }
+
+      // Keep the active navigation item in sync with the visible section.
+      if ('IntersectionObserver' in window) {
+        const sectionObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              navAnchors.forEach(link => {
+                const active = link.getAttribute('href') === `#${entry.target.id}`;
+                link.classList.toggle('active', active);
+                if (active) link.setAttribute('aria-current', 'location');
+                else link.removeAttribute('aria-current');
+              });
+            }
+          });
+        }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+        sections.forEach(section => sectionObserver.observe(section));
+      }
+
+      // Gentle pointer movement on the featured artwork for mouse/trackpad users.
+      const hero = document.querySelector('.hero');
+      const art = document.querySelector('.hero-art');
+      const artImage = art?.querySelector('img');
+      if (hero && art && artImage && window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reducedMotion) {
+        hero.addEventListener('pointermove', event => {
+          const rect = hero.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width - .5;
+          const y = (event.clientY - rect.top) / rect.height - .5;
+          artImage.style.marginLeft = `${x * 8}px`;
+          artImage.style.marginTop = `${y * 6}px`;
+        }, { passive: true });
+        hero.addEventListener('pointerleave', () => {
+          artImage.style.marginLeft = '';
+          artImage.style.marginTop = '';
+        });
+      }
+    })();
+    
+  </script>
+</body>
+</html>
